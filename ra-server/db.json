@@ -6,7 +6,7 @@
     },
     {
       "id": 2,
-      "name": "beardadada"
+      "name": "beard"
     },
     {
       "id": 3,
@@ -61,7 +61,7 @@
     {
       "id": 1,
       "category_id": 2,
-      "title": "Dog in the Grass",
+      "title": "Dog and Grass",
       "width": 16,
       "height": 20,
       "price": 25,

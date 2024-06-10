@@ -1,5 +1,6 @@
 import {
   Datagrid,
+  EditButton,
   ImageField,
   List,
   NumberField,
@@ -23,7 +24,9 @@ export const PosterList = () => (
   <List>
     <Datagrid>
       <TextField source="id" />
-      <ReferenceField source="category_id" reference="categories" />
+      <ReferenceField source="category_id" reference="categories">
+        <TextField source="name" />
+      </ReferenceField>
       <TextField source="title" />
       <NumberField source="width" label="Width (cm)" />
       <NumberField source="height" label="Height (cm)" />
@@ -38,6 +41,7 @@ export const PosterList = () => (
       <TextField source="description" />
       <NumberField source="stock" />
       <NumberField source="sales" sx={{ fontWeight: "bold" }} />
+      <EditButton />
     </Datagrid>
   </List>
 );

@@ -17,6 +17,7 @@ const App = () => (
       list={CategoryList}
       edit={CategoryEdit}
       create={CategoryCreate}
+      recordRepresentation="name"
     />
     <Resource
       name="posters"
