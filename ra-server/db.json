@@ -6,7 +6,7 @@
     },
     {
       "id": 2,
-      "name": "beard"
+      "name": "beardadada"
     },
     {
       "id": 3,
@@ -51,6 +51,10 @@
     {
       "id": 13,
       "name": "water"
+    },
+    {
+      "name": "Adidas",
+      "id": 14
     }
   ],
   "posters": [
