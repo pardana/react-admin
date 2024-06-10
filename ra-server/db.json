@@ -68,32 +68,6 @@
       "sales": 23
     },
     {
-      "id": 2,
-      "category_id": 1,
-      "title": "Brown Cow",
-      "width": 32,
-      "height": 26,
-      "price": 45,
-      "thumbnail": "https://marmelab.com/posters/animals-3.jpeg",
-      "image": "https://marmelab.com/posters/animals-3.jpeg",
-      "description": "A brown cow grazing peacefully.",
-      "stock": 19,
-      "sales": 21
-    },
-    {
-      "id": 3,
-      "category_id": 1,
-      "title": "Leopard Road",
-      "width": 25,
-      "height": 19,
-      "price": 30,
-      "thumbnail": "https://marmelab.com/posters/animals-4.jpeg",
-      "image": "https://marmelab.com/posters/animals-4.jpeg",
-      "description": "A leopard walking along a dusty road.",
-      "stock": 122,
-      "sales": 23
-    },
-    {
       "id": 4,
       "category_id": 1,
       "title": "Sad Dog",
@@ -105,19 +79,6 @@
       "description": "A sad-looking dog sitting by the door.",
       "stock": 0,
       "sales": 26
-    },
-    {
-      "id": 6,
-      "category_id": 1,
-      "title": "Green Birds",
-      "width": 24,
-      "height": 34,
-      "price": 40,
-      "thumbnail": "https://marmelab.com/posters/animals-7.jpeg",
-      "image": "https://marmelab.com/posters/animals-7.jpeg",
-      "description": "Two green birds perched on a branch.",
-      "stock": 88,
-      "sales": 30
     },
     {
       "id": 7,
@@ -690,6 +651,16 @@
       "description": "An apricot tree in full bloom.",
       "stock": 31,
       "sales": 7
+    },
+    {
+      "category_id": 12,
+      "title": "Testing",
+      "width": 20,
+      "height": 202,
+      "price": 20,
+      "stock": null,
+      "sales": null,
+      "id": 51
     }
   ]
 }
