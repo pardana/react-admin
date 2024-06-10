@@ -1,5 +1,5 @@
 import {
-  Datagrid,
+  // Datagrid,
   EditButton,
   ImageField,
   List,
@@ -7,9 +7,20 @@ import {
   ReferenceField,
   TextField,
   useRecordContext,
+  TopToolbar,
+  SelectColumnsButton,
+  ExportButton,
+  DatagridConfigurable,
 } from "react-admin";
 
 import { PosterFilterSidebar } from "./FilterList";
+
+const PosterListActions = () => (
+  <TopToolbar>
+    <SelectColumnsButton />
+    <ExportButton />
+  </TopToolbar>
+);
 
 const UrlField = ({ source }: { source: string }) => {
   const record = useRecordContext();
@@ -23,8 +34,8 @@ const UrlField = ({ source }: { source: string }) => {
 };
 
 export const PosterList = () => (
-  <List aside={<PosterFilterSidebar />}>
-    <Datagrid>
+  <List aside={<PosterFilterSidebar />} actions={<PosterListActions />}>
+    <DatagridConfigurable>
       <TextField source="id" />
       <ReferenceField source="category_id" reference="categories">
         <TextField source="name" />
@@ -44,6 +55,6 @@ export const PosterList = () => (
       <NumberField source="stock" />
       <NumberField source="sales" sx={{ fontWeight: "bold" }} />
       <EditButton />
-    </Datagrid>
+    </DatagridConfigurable>
   </List>
 );
