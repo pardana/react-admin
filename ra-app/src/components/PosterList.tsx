@@ -9,6 +9,8 @@ import {
   useRecordContext,
 } from "react-admin";
 
+import { PosterFilterSidebar } from "./FilterList";
+
 const UrlField = ({ source }: { source: string }) => {
   const record = useRecordContext();
   if (!record) return null;
@@ -21,7 +23,7 @@ const UrlField = ({ source }: { source: string }) => {
 };
 
 export const PosterList = () => (
-  <List>
+  <List aside={<PosterFilterSidebar />}>
     <Datagrid>
       <TextField source="id" />
       <ReferenceField source="category_id" reference="categories">
